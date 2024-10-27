@@ -1,0 +1,12 @@
+<form method="POST">{% csrf_token %}
+    <input type="number" required placeholder="enter price" name="dishname" id="item">
+    <label for="item"></label>
+    <button type="submit">search</button>
+</form>
+{% for i in j %}
+<p>{{ i.dishname }}------{{i.price}} <br></p>
+{% endfor %}
+<p>{% for num in s %}
+    {{ num.dishname }} <hr><br>
+    {% endfor %}
+</p>
